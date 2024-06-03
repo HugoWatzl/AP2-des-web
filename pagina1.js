@@ -1,8 +1,8 @@
-const tiquinho = '572e1c7b3aeeab2d6c153e9c568c98f6'
+const tiquinho = 'eff4c683cdbc0418ce1f98ea286351e2855fdd66'
 
 document.getElementById('butao').addEventListener('click' , function(){
     var senhaDigitada = document.getElementById9('senha').value
-    if (senhaDigitada === tiquinho) {
+    if ( hex_sha256 === senhaDigitada && tiquinho) {
         sessionStorage.setItem('logado', 1);
         window.location.href = '2.html';
     } 
