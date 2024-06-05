@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: #002b5c;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+#divMargem {
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px; /* Aumentei a altura para que o texto não fique cortado */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: space-between; /* Distribui os elementos ao longo da linha */
+    padding: 0 20px; /* Adicionei padding para espaçamento interno */
+}
+
+#bot {
+    font-size: 1.2em; /* Tamanho de fonte aumentado */
+    color: #002b5c; /* Alterei a cor do texto para contrastar com o fundo */
+    font-weight: bold; /* Adicionei negrito para destacar */
+}
+
+#B_voltar {
+    background-color: transparent;
+    border: none;
+    color: #ffde00;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Adicionada transição suave */
+}
+
+#B_voltar:hover {
+    color: #827c00; /* Mudança de cor no hover */
+}
+
+#divTime {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%; /* Alterado para ocupar toda a largura */
+    max-width: 400px; /* Adicionado limite de largura */
+}
+
+button {
+    background-color: #ffde00;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px; /* Adicionado padding horizontal */
+    margin: 0 10px; /* Adicionado espaçamento horizontal entre os botões */
+    color: #002b5c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicionada transição suave */
+}
+
+button:hover {
+    background-color: #827c00;
+}
+
+
