@@ -16,14 +16,14 @@ body {
     padding: 0 20px; /* Adicionei padding para espaçamento interno */
 }
 
-#bot {
+#botNome {
     font-size: 1.2em; /* Tamanho de fonte aumentado */
     color: #002b5c; /* Alterei a cor do texto para contrastar com o fundo */
     font-weight: bold; /* Adicionei negrito para destacar */
 }
 
 #B_voltar {
-    background-color: transparent;
+    background-color: #002b5f;
     border: none;
     color: #ffde00;
     font-size: 1em;
@@ -67,5 +67,16 @@ button {
 button:hover {
     background-color: #827c00;
 }
+
+#pesquisa{
+    display: block;
+    margin: 30px auto; /* Centraliza em baixo dos divTime */
+    width: 400px; /* Defina a largura desejada */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+    
 
 
