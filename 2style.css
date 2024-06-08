@@ -6,39 +6,15 @@ body {
     padding: 20px;
 }
 
-#divMargem {
-    background-color: #ffffff;
-    width: 100%;
-    height: 50px; /* Aumentei a altura para que o texto não fique cortado */
-    display: flex;
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    justify-content: space-between; /* Distribui os elementos ao longo da linha */
-    padding: 0 20px; /* Adicionei padding para espaçamento interno */
-}
+#btn_sair {
+    background-color: #002b5c;
+    color: white;
+    position: fixed; 
+    right:40px; 
+    }
 
-#botNome {
-    font-size: 1.2em; /* Tamanho de fonte aumentado */
-    color: #002b5c; /* Alterei a cor do texto para contrastar com o fundo */
-    font-weight: bold; /* Adicionei negrito para destacar */
-}
-
-#B_voltar {
-    background-color: #002b5f;
-    border: none;
-    color: #ffde00;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease; /* Adicionada transição suave */
-}
-
-#B_voltar:hover {
-    color: #827c00; /* Mudança de cor no hover */
-}
-
-#divTime {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+#btn_sair:hover {
+    background-color: #051f3b;
 }
 
 input[type="text"] {
