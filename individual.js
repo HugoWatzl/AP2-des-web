@@ -8,7 +8,7 @@ if (sessionStorage.getItem('logado')){
     const btn_voltar = document.createElement('button');
         btn_voltar.innerHTML = 'Voltar';
         btn_voltar.style.gridArea = 'a8';
-        btn_voltar.style.padding = '1rem';
+        btn_voltar.style.padding = '5px 10px';
         btn_voltar.style.border = 'white 1px solid';
         btn_voltar.style.borderRadius = '5px';
         btn_voltar.style.color = 'white';
@@ -16,6 +16,8 @@ if (sessionStorage.getItem('logado')){
         btn_voltar.style.background= 'none';
         btn_voltar.style.cursor = 'pointer';
         btn_voltar.style.zIndex = '999';
+        btn_voltar.style.fontSize = '14px'; 
+        btn_voltar.style.margin = '5px'; 
         btn_voltar.onclick = () => {
             window.location.href = '2.html';
         }

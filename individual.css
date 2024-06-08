@@ -1,18 +1,6 @@
 body{
   background-color: #002b5c;
 }
-#bnt_voltar {
-  background-color: #ffde00;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 10px 20px; 
-  margin: 0 10px; 
-  color: #002b5c;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-}
 
 #bnt_voltar:hover {
   background-color: #ffde00;
