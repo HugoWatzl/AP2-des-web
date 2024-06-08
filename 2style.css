@@ -11,6 +11,8 @@ body {
     color: white;
     position: fixed; 
     right:40px; 
+    border: 2px solid white; 
+    border-radius: 5px; 
     }
 
 #btn_sair:hover {
@@ -23,8 +25,8 @@ input[type="text"] {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    width: 100%; /* Alterado para ocupar toda a largura */
-    max-width: 400px; /* Adicionado limite de largura */
+    width: 100%; 
+    max-width: 400px; 
 }
 
 button {
@@ -32,12 +34,12 @@ button {
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px; /* Adicionado padding horizontal */
-    margin: 0 10px; /* Adicionado espaçamento horizontal entre os botões */
+    padding: 10px 20px; 
+    margin: 0 10px; 
     color: #002b5c;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Adicionada transição suave */
+    transition: background-color 0.3s ease; 
 }
 
 button:hover {
@@ -46,13 +48,38 @@ button:hover {
 
 #pesquisa{
     display: block;
-    margin: 30px auto; /* Centraliza em baixo dos divTime */
-    width: 400px; /* Defina a largura desejada */
+    margin: 30px auto; 
+    width: 400px; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
 }
+
+#negado{
+    color: red;
+    display: block;
+    margin: 350px auto;
+    width: 450px; 
+    
+}
+#select{
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #ffde00;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#select > option {
+    background-color: white;
+    color: black;
+}
+
 @media screen and (max-width: 767px){
     #myContainer {
         grid-template-columns: auto;

@@ -8,12 +8,6 @@ if (sessionStorage.getItem('logado')){
     }
 
     const carregarDados = async (url) => {
-        container.innerHTML = `
-        <div style = 'display: flex; flex-direction: column; justify-content: center; align-itens: center; margin: 0 auto;'>
-            <img src = 'assets/imagens/loading.gif'/>
-            <h3>Carregando dados, por favor aguarde...</h3>
-        </div>
-        `;
         const data = await pega_json(url);
         lista_jogadores = data;
         
@@ -36,7 +30,7 @@ if (sessionStorage.getItem('logado')){
     document.body.appendChild(container);
 
     const escudo = document.createElement('img');
-    escudo.src = 'assets/imagens/escudo.png';
+    escudo.src = 'escudo.png';
 
     const title = document.createElement('h1');
     title.innerHTML = 'Elenco botafogo 2024';
@@ -48,6 +42,7 @@ if (sessionStorage.getItem('logado')){
     title.style.padding = '0';
 
     const divEscudo = document.createElement('div');
+    divEscudo.style.lef = '30px' ;
     divEscudo.style.display = 'flex';
     divEscudo.style.width = '5rem';
     divEscudo.style.height = '5rem';
@@ -66,7 +61,7 @@ if (sessionStorage.getItem('logado')){
     btn_masculino.onclick = () => {
         container.innerHTML = '';
         carregarDados('https://botafogo-atletas.mange.li/2024-1/masculino');
-    }
+    };
 
     const btn_all = document.createElement('button');
     btn_all.innerHTML = 'Elenco Completo';
@@ -120,7 +115,6 @@ if (sessionStorage.getItem('logado')){
     header.style.padding = '1rem';
     header.style.margin = '0';
     header.style.height = 'fit-content';
-    header.style.marginBottom = '5px';
 
     const botoes = document.createElement('div');
     botoes.id = 'btns';
@@ -194,7 +188,6 @@ if (sessionStorage.getItem('logado')){
         divCard.dataset.id = atleta.id;
         divCard.dataset.descricao = atleta.descricao;
         divCard.dataset.nome = atleta.nome;
-        divCard.dataset.nomeCompleto = atleta.nome_completo;
         divCard.dataset.posicao = atleta.posicao;
         divCard.dataset.imagem = atleta.imagem;
         divCard.dataset.elenco = atleta.elenco;
@@ -236,7 +229,8 @@ if (sessionStorage.getItem('logado')){
         const btn_detalhe = document.createElement('button');
         btn_detalhe.id = 'btn_detalhe';
         btn_detalhe.style.gridArea = 'a3';
-        btn_detalhe.innerHTML = 'SAIBA MAIS';
+        btn_detalhe.innerHTML = 'Saiba mais';
+
 
         divCard.appendChild(imagem);
         divCard.appendChild(titulo);
@@ -246,14 +240,9 @@ if (sessionStorage.getItem('logado')){
     }
 }else {
     const h1 = document.createElement('h1');
-    h1.textContent = 'Acesso negado, faça login para acessar essa página';
-    document.body.innerHTML = '';
-    document.body.appendChild(h1);
+    h1.id = 'negado'; 
+    h1.textContent = 'Acesso negado, faça login para acessar essa página !!'; 
+    document.body.innerHTML = ''; 
+    document.body.appendChild(h1); 
+    
 }
-
-document.getElementById('bnt_SaibaMais').addEventListener('click', function() {
-    window.location.href = 'individual.html';
-});
-
-
-btn_more
