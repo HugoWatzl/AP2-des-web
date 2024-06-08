@@ -78,5 +78,33 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
     
+@media screen and (max-width: 767px){
+    #myContainer {
+        grid-template-columns: auto;
+    }
+    #btns{
+        display: none;
+    }
+    #select{
+        display: flex;
+    }
+}
 
+@media screen and (min-width: 768px){
+    #myContainer {
+        grid-template-columns: auto auto;
+    }
+    #btns{
+        display: flex;
+    }
+    #select{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #myContainer {
+        grid-template-columns: auto auto auto auto;
+    }
+}
 
