@@ -39,7 +39,7 @@ if (sessionStorage.getItem('logado')){
     escudo.src = 'assets/imagens/escudo.png';
 
     const title = document.createElement('h1');
-    title.innerHTML = 'Elenco de Atletas';
+    title.innerHTML = 'Elenco botafogo 2024';
     title.style.color = 'white';
     title.style.textAlign = 'center';
     title.style.fontFamily = 'sans-serif';
@@ -90,14 +90,14 @@ if (sessionStorage.getItem('logado')){
 
     const inputPesquisa = document.createElement('input');
     inputPesquisa.id = 'inputPesquisa';
-    inputPesquisa.placeholder = 'Pesquise por posição';
+    inputPesquisa.placeholder = 'Pesquise o nome do jogador';
     inputPesquisa.type = 'text';
     divPesquisa.appendChild(inputPesquisa);
 
     inputPesquisa.onkeyup = (event) => {
         const valor = event.target.value;
         const resultado = lista_jogadores.filter(
-            (elemento) => elemento.posicao.toLowerCase().includes(valor.toLowerCase())
+            (elemento) => elemento.nome.toLowerCase().includes(valor.toLowerCase())
         )
         container.innerHTML= '';
     
@@ -174,7 +174,7 @@ if (sessionStorage.getItem('logado')){
         }
 
         localStorage.setItem('atleta', JSON.stringify(dados));
-        window.location.href = `detalhes.html?id=${dados.id}`;
+        window.location.href = `individual.html?id=${dados.id}`;
     }
 
     const constroiCard = ( atleta ) => {
@@ -233,14 +233,14 @@ if (sessionStorage.getItem('logado')){
 
         titulo.appendChild(pPosicao);
 
-        const btn_more = document.createElement('button');
-        btn_more.id = 'btn_more';
-        btn_more.style.gridArea = 'a3';
-        btn_more.innerHTML = 'SAIBA MAIS';
+        const btn_detalhe = document.createElement('button');
+        btn_detalhe.id = 'btn_detalhe';
+        btn_detalhe.style.gridArea = 'a3';
+        btn_detalhe.innerHTML = 'SAIBA MAIS';
 
         divCard.appendChild(imagem);
         divCard.appendChild(titulo);
-        divCard.appendChild(btn_more)
+        divCard.appendChild(btn_detalhe)
 
         container.appendChild(divCard);
     }
@@ -250,3 +250,10 @@ if (sessionStorage.getItem('logado')){
     document.body.innerHTML = '';
     document.body.appendChild(h1);
 }
+
+document.getElementById('bnt_SaibaMais').addEventListener('click', function() {
+    window.location.href = 'individual.html';
+});
+
+
+btn_more
