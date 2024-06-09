@@ -1,11 +1,11 @@
 body {
-    background-color: #002b5c; /* Blue color representing a soccer field */
+    background-color: #002b5c; 
     font-family: Arial, sans-serif;
     padding: 20px;
 }
 
 h1 {
-    color: #ffde00; /* Yellow color representing a soccer ball */
+    color: #ffde00; 
     text-align: center;
     margin-top: 0;
     
@@ -18,7 +18,7 @@ div {
 }
 
 input[type="password"] {
-    background-color: #ffffff; /* White color for the input field */
+    background-color: #ffffff; 
     border: none;
     border-radius: 5px 0 0 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -27,22 +27,23 @@ input[type="password"] {
 }
 
 button {
-    background-color: #ffde00; /* Yellow color representing a soccer ball */
+    background-color: #ffde00; 
     border: none;
-    border-radius: 5px; /* rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* adjusted shadow */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     padding: 10px;
     width: 30%;
-    color: #002b5c; /* Blue color representing a soccer field */
+    color: #002b5c; 
     font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #827c00; /* hover effect */
+    background-color: #827c00; 
 }
+
 p {
-    color: #ffffff; /* White color for the paragraph text */
+    color: #ffffff; 
     text-align: center;
     margin-top: 30px;
     font-size: 0.8em;
